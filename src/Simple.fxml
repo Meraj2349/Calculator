@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
    <children>
       <TextField fx:id="txt_result" prefHeight="58.0" prefWidth="300.0">
          <VBox.margin>
@@ -127,7 +127,15 @@
       </HBox>
       <HBox prefHeight="33.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#Number" prefHeight="40.0" prefWidth="140.0" text="0">
+            <Button mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="54.0" text="c">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="0">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -143,13 +151,16 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" text="+">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </HBox.margin>
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="40.0" prefWidth="56.0" text="+">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
          </children>
       </HBox>

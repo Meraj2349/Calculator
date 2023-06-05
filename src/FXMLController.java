@@ -43,6 +43,10 @@ public class FXMLController implements Initializable {
 
     }
 
+    public void clear() {
+
+    }
+
     public void calculate(long n1, long n2, String op) {
         switch (op) {
             case "+":
