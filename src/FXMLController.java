@@ -32,12 +32,13 @@ public class FXMLController implements Initializable {
             number1 = Long.parseLong(txt_result.getText());
             txt_result.setText("");
         } else {
-            if (!op.equals("")) {
+            if (op.equals("")) {
                 return;
             }
             number2 = Long.parseLong(txt_result.getText());
             // create 3 method calculate;
             calculate(number1, number2, op);
+            op = "";
         }
 
     }
