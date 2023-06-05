@@ -127,7 +127,7 @@
       </HBox>
       <HBox prefHeight="33.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="54.0" text="c">
+            <Button mnemonicParsing="false" onAction="#Clear" prefHeight="40.0" prefWidth="54.0" text="c">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>

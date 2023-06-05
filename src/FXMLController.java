@@ -43,7 +43,12 @@ public class FXMLController implements Initializable {
 
     }
 
-    public void clear() {
+    public void Clear() {
+        // String clear = ((Button) ae.getSource()).getText();
+        txt_result.clear();
+        number1 = 0;
+        number2 = 0;
+        op = "";
 
     }
 
